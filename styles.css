@@ -1,0 +1,227 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+/* Estilos para los enlaces */
+span {
+    text-decoration: underline;
+}
+
+span:hover {
+    font-weight: bold;
+}
+
+/* Estilos para los párrafos */
+p {
+    font-size: xx-small;
+}
+
+/* Estilos para el artículo */
+article {
+    height: auto;
+    width: 1120px;
+    padding: 0px 25px;
+    margin: 0px auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado de la sección */
+.section-heading {
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Estilos para el párrafo de la sección */
+.section-paragraph {
+    font-size: medium;
+    margin: 16px 0;
+    text-align: center;
+}
+
+/* Estilos para la lista de la sección */
+.list-section {
+    height: 220px;
+    width: 1110px;
+    padding: 15px 30px;
+    background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box padding-box, linear-gradient(to right, rgb(176, 13, 110), rgb(8, 71, 145)), border-box border-box;
+    border-radius: 12px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-image: initial;
+    border-left: 4px solid rgb(176, 13, 110) !important;
+    border-right: 4px solid rgb(8, 71, 145) !important;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    margin: 32px auto 48px;
+    text-align: inherit;
+}
+
+/* Estilos para la caja principal */
+.main-box {
+    height: 220px;
+    width: 1120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 32px;
+}
+
+/* Estilos para las cajas pequeñas */
+.small-box {
+    overflow: hidden;
+    height: 400px;
+    width: 310px;
+    border: solid;
+    border-radius: 10px;
+    padding: 16px;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: start;
+}
+
+/* Estilos específicos para los elementos dentro de las cajas pequeñas */
+.small-box * {
+    margin: 0;
+    padding: 0;
+    align-self: stretch;
+}
+
+.one {
+    border-color: rgb(255, 210, 215);
+}
+
+.two {
+    border-color: rgb(196, 177, 212);
+}
+
+.tree {
+    border-color: rgb(255, 200, 98);
+}
+
+.four {
+    border-color: rgb(165, 187, 209);
+}
+
+/* Estilos para los encabezados de las cajas pequeñas */
+.sub-heading {
+    background-size: 5px;
+    background-color: rgb(255, 210, 215);
+    color: #121212;
+    width: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 5px;
+    border-radius: 3px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+/* Estilos para los contenidos de las cajas pequeñas */
+.box-content {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: left;
+}
+
+.sub-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: right;
+}
+
+/* Estilos para las listas dentro de las cajas pequeñas */
+.sub-list {
+    font-size: medium;
+    margin-left: 20px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    text-align: left;
+}
+
+/* Estilos para los botones dentro de las cajas pequeñas */
+.btn {
+    border: transparent;
+    border-radius: 5px;
+    background-color: rgb(255, 210, 215);
+    color: #121212;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 60px;
+    width: auto;
+    margin-bottom: auto;
+}
+
+.btn:hover {
+    zoom: 1.05;
+}
+
+/* Estilos para los textos adicionales dentro de las cajas pequeñas */
+.price-tag {
+    font-size: x-small;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    text-align: center;
+}
+
+/* Estilos específicos para la cuarta caja pequeña */
+.small-box:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: 32px;
+}
+
+/* Estilos específicos para los elementos dentro de las cajas pequeñas */
+.small-box:nth-child(4) .price-tag {
+    grid-row: 4 / 5;
+}
+
+.small-box:nth-child(4) .box-content {
+    grid-row: 2 / 2;
+}
+
+/* Estilos específicos para los elementos dentro de las cajas pequeñas */
+.small-box:nth-child(4) .price-tag {
+    grid-row: 5;
+}
+
+
+.color-background2 {
+    background-color: rgb(196, 177, 212);
+
+}
+
+.color-background3 {
+    background-color: rgb(255, 200, 98);
+    
+}
+
+.color-background4 {
+    background-color: rgb(165, 187, 209);
+    
+}
+
+
+    @media screen and (max-width: 1200px) {
+        .main-box {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+    
+    
+    
+        .list-section {
+            flex-direction: column;
+            align-items: center;
+            width: 100%; /* Cambio añadido */
+        }
+    }
